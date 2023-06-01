@@ -410,42 +410,48 @@
     <!--Modal-->
 
     <div class="modal is-hidden" data-modal>
-      <div class="modal-content">
+      <div class="modal__content">
         <button data-modal-close class="close-btn">&times;</button>
-        <span class="form-text">Leave your information and we'll call you back</span>
+        <span class="modal__form-text">Leave your information and we'll call you back</span>
         <form>
           <div role="group" class="form-group">
-            <label class="form-label" for="name">Name</label>
-            <input class="form-input input-person" id="name" name="name" type="text" /><svg
-              class="form-icons-person"
-            >
+            <label class="form-group__label" for="username">Name</label>
+            <input
+              class="form-group__input input-person"
+              id="username"
+              name="username"
+              type="text"
+            /><svg class="form-group__person-icon">
               <use href="./css/icons.svg#icon-person-black-1"></use>
             </svg>
-            <label class="form-label" for="name">Telephone</label>
-            <input class="form-input input-phone" id="name" name="name" type="tel" /><svg
-              class="form-icons-phone"
-            >
+            <label class="form-group__label" for="telephone">Telephone</label>
+            <input
+              class="form-group__input input-phone"
+              id="phone"
+              name="phone_number"
+              type="tel"
+            /><svg class="form-group__phone-icon">
               <use href="./css/icons.svg#icon-phone-black-1"></use>
             </svg>
-            <label class="form-label" for="name">E-mail</label>
-            <input class="form-input input-email" id="email" name="email" type="email" /><svg
-              class="form-icons-email"
+            <label class="form-group__label" for="email">E-mail</label>
+            <input class="form-group__input input-email" id="email" name="email" type="email" /><svg
+              class="form-group__email-icon"
             >
               <use href="./css/icons.svg#icon-email-black-1"></use>
             </svg>
-            <label class="form-label"
+            <label class="form-group__label"
               ><span>Comments</span>
               <textarea
                 name="comments"
                 placeholder="Enter the text"
-                class="form-textarea"
+                class="form-group__textarea"
                 rows="6"
               ></textarea>
             </label>
-            <label class="form-label form-checkbox">
+            <label class="form-group__label form-checkbox">
               <input type="checkbox" name="acceptTerms" /><span
                 >I agree with the letter and accept the
-                <span class="agreement-terms">Terms and Conditions</span></span
+                <span class="form-group__agreement-terms">Terms and Conditions</span></span
               >
             </label>
             <div class="form-controls">
