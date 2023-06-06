@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import "./utils/reset.scss";
+@import "./utils/variables.scss";
+@import "./components/buttons";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/form";
+@import "./components/modal";
+@import "./components/index";
+@import "./components/portfolio";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.section {
+  margin: 0 auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
